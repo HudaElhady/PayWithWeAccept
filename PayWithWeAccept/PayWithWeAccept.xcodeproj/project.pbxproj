@@ -13,6 +13,10 @@
 		1EEFAB8A22BD3BF4000B528B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEFAB8822BD3BF4000B528B /* Main.storyboard */; };
 		1EEFAB8C22BD3BF5000B528B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEFAB8B22BD3BF5000B528B /* Assets.xcassets */; };
 		1EEFAB8F22BD3BF5000B528B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEFAB8D22BD3BF5000B528B /* LaunchScreen.storyboard */; };
+		1EEFAB9A22BD4224000B528B /* IBInspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAB9922BD4224000B528B /* IBInspectables.swift */; };
+		1EEFAB9D22BD4304000B528B /* ItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAB9C22BD4304000B528B /* ItemsList.swift */; };
+		1EEFAB9F22BD4A85000B528B /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAB9E22BD4A85000B528B /* ItemCell.swift */; };
+		1EEFABA122BD4E69000B528B /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFABA022BD4E69000B528B /* item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1EEFAB8B22BD3BF5000B528B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EEFAB8E22BD3BF5000B528B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EEFAB9022BD3BF5000B528B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EEFAB9922BD4224000B528B /* IBInspectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectables.swift; sourceTree = "<group>"; };
+		1EEFAB9C22BD4304000B528B /* ItemsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsList.swift; sourceTree = "<group>"; };
+		1EEFAB9E22BD4A85000B528B /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		1EEFABA022BD4E69000B528B /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		1EEFAB8122BD3BF4000B528B /* PayWithWeAccept */ = {
 			isa = PBXGroup;
 			children = (
+				1EEFAB9822BD41B1000B528B /* Helpers */,
+				1EEFAB9622BD3D12000B528B /* Epics */,
 				1EEFAB8222BD3BF4000B528B /* AppDelegate.swift */,
 				1EEFAB8422BD3BF4000B528B /* SceneDelegate.swift */,
 				1EEFAB8622BD3BF4000B528B /* ViewController.swift */,
-				1EEFAB8822BD3BF4000B528B /* Main.storyboard */,
 				1EEFAB8B22BD3BF5000B528B /* Assets.xcassets */,
 				1EEFAB8D22BD3BF5000B528B /* LaunchScreen.storyboard */,
 				1EEFAB9022BD3BF5000B528B /* Info.plist */,
 			);
 			path = PayWithWeAccept;
+			sourceTree = "<group>";
+		};
+		1EEFAB9622BD3D12000B528B /* Epics */ = {
+			isa = PBXGroup;
+			children = (
+				1EEFAB9722BD3D27000B528B /* Items */,
+			);
+			path = Epics;
+			sourceTree = "<group>";
+		};
+		1EEFAB9722BD3D27000B528B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				1EEFAB9B22BD4282000B528B /* SelectItem */,
+				1EEFAB8822BD3BF4000B528B /* Main.storyboard */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		1EEFAB9822BD41B1000B528B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1EEFAB9922BD4224000B528B /* IBInspectables.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1EEFAB9B22BD4282000B528B /* SelectItem */ = {
+			isa = PBXGroup;
+			children = (
+				1EEFAB9C22BD4304000B528B /* ItemsList.swift */,
+				1EEFAB9E22BD4A85000B528B /* ItemCell.swift */,
+				1EEFABA022BD4E69000B528B /* item.swift */,
+			);
+			path = SelectItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEFAB9D22BD4304000B528B /* ItemsList.swift in Sources */,
 				1EEFAB8722BD3BF4000B528B /* ViewController.swift in Sources */,
+				1EEFABA122BD4E69000B528B /* item.swift in Sources */,
+				1EEFAB9F22BD4A85000B528B /* ItemCell.swift in Sources */,
 				1EEFAB8322BD3BF4000B528B /* AppDelegate.swift in Sources */,
 				1EEFAB8522BD3BF4000B528B /* SceneDelegate.swift in Sources */,
+				1EEFAB9A22BD4224000B528B /* IBInspectables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9MRWB6593;
 				INFOPLIST_FILE = PayWithWeAccept/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9MRWB6593;
 				INFOPLIST_FILE = PayWithWeAccept/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
